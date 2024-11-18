@@ -15,6 +15,7 @@ body{
 
 
 footer{
+    width: 100%;
     background: linear-gradient(to right, #C38315, #FF0000); 
     text-align: center;
 
@@ -25,3 +26,5 @@ footer a img {
     width: 6vh;
     
 }
+
+
