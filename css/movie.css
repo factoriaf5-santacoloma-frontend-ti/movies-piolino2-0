@@ -3,7 +3,9 @@
 .contenedor {
     display: flex;
     background-color: #FFA200;
-    width: 80%;
+    width: 70%;
+    height: 70%;
+    margin-left: calc(15%);
     box-shadow: 5px 5px 10px #FFA200 ;
 }
 
@@ -12,4 +14,9 @@ h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;    
 
+}
+
+.poster{
+    width: 60px;
+    
 }
