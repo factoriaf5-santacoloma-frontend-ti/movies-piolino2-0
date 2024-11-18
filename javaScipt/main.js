@@ -15,7 +15,8 @@ window.addEventListener('load',async() =>{
   const original_languaje = document.createElement('p');
   const vote_average = document.createElement('p');
 
-  
+  listIl.classList.add('lista');
+
   title.classList.add('title');
   title.textContent    = movies.title;
 

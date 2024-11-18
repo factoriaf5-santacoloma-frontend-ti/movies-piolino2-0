@@ -12,13 +12,10 @@ body{
 
 }
 
-img{
 
-    width: 40vh;
-}
 
 footer{
-    background-color: grey;
+    background: linear-gradient(to right, #C38315, #FF0000); 
     text-align: center;
 
 }

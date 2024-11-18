@@ -1,3 +1,40 @@
 .banner-gladiador{
     width: 100%;
 }
+
+.title{
+    display: none;
+}
+
+.overview{
+  display: none;
+}
+
+.languaje{
+    display: none;
+}
+
+.vote{
+    display: none;
+}
+
+#app{
+    text-align: center;
+}
+
+.poster::after{
+    cursor: pointer;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.poster{
+    width: 25vh;
+     margin-top: 3vh;
+     margin-bottom: 7vh;
+
+    
+}
+
+
