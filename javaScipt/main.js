@@ -1,4 +1,4 @@
-import { getData } from "./public/api";
+import { getData } from "./api";
 
 window.addEventListener('load',async() =>{
   
