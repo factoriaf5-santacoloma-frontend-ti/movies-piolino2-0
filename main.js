@@ -15,11 +15,24 @@ window.addEventListener('load',async() =>{
   const original_languaje = document.createElement('p');
   const vote_average = document.createElement('p');
 
-
+  
+  title.classList.add('title');
   title.textContent    = movies.title;
+
+
+  poster_path.classList.add('poster');
   poster_path.src      = `https://image.tmdb.org/t/p/w500${movies.poster_path}`;
+
+  
+  overview.classList.add('overview');
   overview.textContent  = movies.overview;
+  
+  
+  original_languaje.classList.add('languaje');
   original_languaje.textContent =movies.original_languaje;
+  
+
+  vote_average.classList.add('vote');
   vote_average.textContent = movies.vote_average;
 
   
@@ -33,7 +46,9 @@ window.addEventListener('load',async() =>{
     
  
 
-    
+
   });  
+
     document.getElementById('app').appendChild(list);
+
 });
