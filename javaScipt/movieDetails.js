@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const poster = document.createElement('img');
     const overview = document.createElement('p');
     const originalLanguage = document.createElement('p');
-    const adult = document.createElement('p');
     const releaseDate = document.createElement('p');
     const div = document.createElement('div');
 
@@ -26,9 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     originalLanguage.classList.add('lenguajeMovie');
     originalLanguage.textContent = `languaje: ${movieData.original_language}`; // Idioma original
     
-    adult.classList.add('adult');
-    adult.textContent = `mayores de edad: ${movieData.adult}`; // Para público adulto
-    
     releaseDate.classList.add('date');
     releaseDate.textContent = `Date: ${movieData.release_date}`; // Fecha de lanzamiento
 
@@ -39,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     div.appendChild(title);
     div.appendChild(overview);
     div.appendChild(originalLanguage);
-    div.appendChild(adult);
     div.appendChild(releaseDate);
     container.appendChild(div);
 
