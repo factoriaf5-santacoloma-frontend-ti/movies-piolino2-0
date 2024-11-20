@@ -20,17 +20,34 @@ width: 100%;
 }
 
 .imagen-cinelandia p{
-    font-size: 200%;
+    
+    font-size: 350%;
 color: white;
 text-align: center;
+align-items: center; /* Centra verticalmente */
+        
+}
+
+@media(max-width: 350px){
+   .imagen-cinelandia{
+    font-size: 70%;
+   }
+
 }
 
 
 
-@media (min-width: 800px){
-
+@media(min-width: 700px){
+    .imagen-cinelandia{
+        font-size: 200%;
+        justify-content: center; /* Centra horizontalmente */
+         align-items: center; /* Centra verticalmente */
+        
+        
+    }
 
 }
+
 
 
 
