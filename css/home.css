@@ -1,42 +1,34 @@
-.banner-gladiador{
-    width: 100%;
+/* Estilos generales */
+.banner-gladiador {
+  width: 100%;
 }
 
-
-
-.title{
-    display: none;
+ul {
+  list-style: none; /* Quitamos los puntos de la lista */
+  display: grid; /* Usamos un diseño de cuadrícula */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Distribuye columnas adaptativas con un mínimo de 200px */
+  gap: 10vh; /* Espaciado entre los elementos de la cuadrícula */
+  padding: 30px; /* Espaciado interno del contenedor */
 }
 
-.overview{
+.lista {
+  padding: 15px; /* Espaciado interno */
+}
+
+/* Ajustar la sombra y bordes redondeados del póster */
+.poster {
+  width: 100%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+  border-radius: 20px; /* Opcional: para bordes redondeados */
+  transition: transform 0.10s ease; /* Transición suave */
+  cursor: pointer;
+}
+
+/* Efecto al pasar el cursor sobre el póster */
+.poster:hover {
+  transform: scale(1.1); /* Aumenta el tamaño a 110% */
+}
+
+.title, .overview, .languaje, .adult, .date { 
   display: none;
 }
-
-.languaje{
-    display: none;
-}
-
-.vote{
-    display: none;
-}
-
-#app{
-    text-align: center;
-}
-
-.poster::after{
-    cursor: pointer;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-
-
-}
-
-.poster{
-    width: 25vh;
-     margin-top: 3vh;
-     margin-bottom: 7vh;
-
-    
-}
-
-
