@@ -15,7 +15,6 @@
  
   .details-container {
     
-    font-family: "DM Serif Text", serif;
     display: flex;
     flex-direction: column; /* Dirección por defecto en dispositivos pequeños */
     align-items: center;
@@ -36,6 +35,7 @@
   }
   
   .parrafo, .lenguajeMovie, .adult, .date, .totalVotos {
+    font-family: "Lato", serif;
     font-size: 2vh;
     margin-top: 4vh;
     margin-left: 3%;
