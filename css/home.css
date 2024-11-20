@@ -1,6 +1,10 @@
 /* Estilos generales */
 .banner-gladiador {
   width: 100%;
+  display: none;
+}
+.banner-gladiador2{
+  width: 100%;
 }
 
 ul {
@@ -46,6 +50,13 @@ ul {
     margin-left: 30%;
     transition: transform 0.1s ease; /* Transición suave */
     cursor: pointer;
+  }
+  .banner-gladiador{
+   display: block;
+  }
+
+  .banner-gladiador2{
+    display: none;
   }
 
   /* Efecto al pasar el cursor sobre el póster */
