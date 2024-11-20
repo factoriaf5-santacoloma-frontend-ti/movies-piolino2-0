@@ -31,11 +31,14 @@ window.addEventListener('load', async () => {
         adult: movies.adult ? 'Yes' : 'No',
         release_date: movies.release_date || 'N/A', // Asegurarse de usar release_date
         
+
       };
       localStorage.setItem('selectedMovie', JSON.stringify(movieData));
 
       // Redirigir a la página de detalles de la película
-      window.location.href = '/movie.html';
+      window.location.href = '/movie.html?id='+movies.id;
+      console.log(window.location.href);
+      
     });
 
     // Añadir los elementos al elemento de la lista
