@@ -51,3 +51,24 @@ window.addEventListener('load', async () => {
 
   document.getElementById('app').appendChild(list);
 });
+
+var imgs = document.querySelectorAll('.slider img');
+var currentImg = 0; // índice de la primera imagen
+const interval = 3000; // duración (velocidad) del slide
+
+function changeSlide() {
+    // Ocultar la imagen actual
+    imgs[currentImg].style.opacity = 0;
+
+    // Actualizar el índice de la imagen actual
+    currentImg = (currentImg + 1) % imgs.length;
+
+    // Mostrar la siguiente imagen
+    imgs[currentImg].style.opacity = 1;
+}
+
+// Mostrar la primera imagen al cargar
+document.addEventListener('DOMContentLoaded', function() {
+    imgs[currentImg].style.opacity = 1; // Asegúrate de que la primera imagen sea visible
+    setInterval(changeSlide, interval); // Cambiar la imagen automáticamente
+});
