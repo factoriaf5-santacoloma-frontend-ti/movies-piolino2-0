@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: rgb(25, 24, 24);
+    background-color: #000000;
 }
 
 .imagen-cinelandia{
@@ -35,9 +35,8 @@ height: 77px;
    }
 
 }
-h2{
-    font-family: lovelo;
-}
+
+
 
 
 @media(min-width: 700px){
