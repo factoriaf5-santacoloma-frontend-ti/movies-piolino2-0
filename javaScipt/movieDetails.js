@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
     overview.textContent = movieData.overview;
 
     originalLanguage.classList.add('lenguajeMovie');
-    originalLanguage.textContent = `${movieData.original_language}`; // Idioma original
+    originalLanguage.textContent = `languaje: ${movieData.original_language}`; // Idioma original
     
     adult.classList.add('adult');
-    adult.textContent = ` ${movieData.adult}`; // Para público adulto
+    adult.textContent = `mayores de edad: ${movieData.adult}`; // Para público adulto
     
     releaseDate.classList.add('date');
     releaseDate.textContent = `Date: ${movieData.release_date}`; // Fecha de lanzamiento
