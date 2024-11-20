@@ -24,7 +24,9 @@ width: 100%;
 color: white;
 text-align: center;
 }
-
+h2{
+    font-family: lovelo;
+}
 
 
 @media (min-width: 800px){
