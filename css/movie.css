@@ -39,6 +39,10 @@
     color: white;
   }
   
+.imagen-cinelandia a {
+  text-decoration:none;
+}
+
   button {
     width: 40%;
     font-size: 150%;
@@ -114,3 +118,41 @@
 
   }
   
+
+.icon-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  background-color: #f7f7f7;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button .button-text {
+  transition: opacity 0.3s ease; /* Transición de opacidad */
+}
+
+.icon-button .button-icon {
+  position: absolute;
+  font-size: 24px; /* Tamaño del ícono */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Transición de opacidad */
+}
+
+.icon-button:hover {
+  background-color: #000000;
+}
+
+.icon-button:hover .button-text {
+  opacity: 0; /* Oculta el texto */
+}
+
+.icon-button:hover .button-icon {
+  opacity: 1; /* Muestra el ícono */
+}
