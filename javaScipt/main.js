@@ -1,55 +1,50 @@
 import { getData } from "./api.js";
 
-window.addEventListener('load',async() =>{
-  
+
+window.addEventListener('load', async () => {
   const data = await getData();
-  
 
   const list = document.createElement('ul');
   data.results.forEach(movies => {
+    const listItem = document.createElement('li');
+    const title = document.createElement('h2');
+    const posterPath = document.createElement('img');
+    const overview = document.createElement('p');
 
-  const listIl =document.createElement('li');
-  const title = document.createElement('h2');
-  const poster_path = document.createElement('img');
-  const overview = document.createElement('p');
-  const original_languaje = document.createElement('p');
-  const vote_average = document.createElement('p');
+    // Configurar la imagen del póster
+    posterPath.classList.add('poster');
+    posterPath.src = `https://image.tmdb.org/t/p/w500${movies.poster_path}`;
+    posterPath.alt = movies.title;
 
-  listIl.classList.add('lista');
+    // Agregar la descripción de la película
+    overview.classList.add('overview');
+    overview.textContent = movies.overview;
 
-  title.classList.add('title');
-  title.textContent    = movies.title;
+    // Hacer que el póster sea clicable
+    posterPath.addEventListener('click', () => {
+      // Guardar información de la película en localStorage
+      const movieData = {
+        title: movies.title,
+        poster: `https://image.tmdb.org/t/p/w500${movies.poster_path}`,
+        overview: movies.overview,
+        original_language: movies.original_language || 'N/A',
+        adult: movies.adult ? 'Yes' : 'No',
+        release_date: movies.release_date || 'N/A', // Asegurarse de usar release_date
+        
+      };
+      localStorage.setItem('selectedMovie', JSON.stringify(movieData));
 
+      // Redirigir a la página de detalles de la película
+      window.location.href = '/movie.html';
+    });
 
-  poster_path.classList.add('poster');
-  poster_path.src      = `https://image.tmdb.org/t/p/w500${movies.poster_path}`;
+    // Añadir los elementos al elemento de la lista
+    listItem.appendChild(title);
+    listItem.appendChild(posterPath);
+    listItem.appendChild(overview);
 
-  
-  overview.classList.add('overview');
-  overview.textContent  = movies.overview;
-  
-  
-  original_languaje.classList.add('languaje');
-  original_languaje.textContent =movies.original_languaje;
-  
+    list.appendChild(listItem);
+  });
 
-  vote_average.classList.add('vote');
-  vote_average.textContent = movies.vote_average;
-
-  
-  listIl.appendChild(title);
-  listIl.appendChild(poster_path);
-  listIl.appendChild(overview);
-  listIl.appendChild(original_languaje);
-  listIl.appendChild(vote_average);
-
-  list.appendChild(listIl);
-    
- 
-
-
-  });  
-
-    document.getElementById('app').appendChild(list);
-
+  document.getElementById('app').appendChild(list);
 });

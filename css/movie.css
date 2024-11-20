@@ -1,22 +1,105 @@
-
-.contenedor {
+#movie-details {
+    background-color: rgb(183, 182, 182);
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+  }
+  
+  .details-container {
     display: flex;
-    background-color: #FFA200;
-    width: 70%;
-    height: 70%;
-    margin-left: calc(15%);
-    box-shadow: 5px 5px 10px #FFA200 ;
-    margin-left: calc(10%);
-}
+    flex-direction: column; /* Dirección por defecto en dispositivos pequeños */
+    align-items: center;
+  }
+  
+  .details-container h1 {
+    text-align: center;
+    margin-top: 2vh;
+  }
+  
+  .details-container img {
+    width: 80%;
+    height: 50vh;
+    margin-top: 3vh;
+  }
+  
+  .parrafo, .lenguajeMovie, .adult, .date {
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-left: 3%;
+  }
+  
+  button {
+    width: 40%;
+    font-size: 150%;
+    margin-left: 30%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: transform 0.1s ease; /* Transición suave */
+  }
+  
+  /* Efecto de presionar */
+  button:active {
+    transform: scale(0.95); /* Reduce el tamaño ligeramente */
+    background-color: #000000; /* Cambia el color de fondo */
+  }
+  
+  /* Media Queries para pantallas medianas y grandes */
+  @media(min-width: 768px) {
+    .details-container {
+      flex-direction: row; /* Alinea los elementos en fila */
+      justify-content: flex-start; /* Alinea los elementos al inicio */
+      align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+  
+    .details-container img {
+      width: 40%; /* Ajusta el tamaño de la imagen */
+      height: auto;
+      margin: 40px; /* Elimina el margen */
+      margin-top: 20vh;
+    }
+  
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%; /* Ajusta el ancho del contenedor de texto */
+      height: auto;
+      padding-left: 2%; /* Añade padding izquierdo para separación */
+    }
+  
+    .details-container h1 {
+      text-align: left; /* Alinea el texto a la izquierda */
+      margin-top: 5vh; /* Elimina el margen superior */
+      font-size: 700%;
+      margin-left: 17%;
+      margin-bottom: 10vh;
+    }
+  
+    .parrafo, .lenguajeMovie, .adult, .date {
+      text-align: left;
+      font-size: 200%; /* Ajusta el tamaño de la fuente */
+      margin-top: 6vh; /* Reduce el margen superior */
+      
+    }
+  
+    button {
+        margin-left: 38%;
+        width: 40vh;
+        font-size: 5vh;
+ 
+    }
+  }
+  @media (min-width: 800px) and (max-width : 1300px) {
 
-h2{
-    color: #ffffff;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;    
+    .details-container h1 {
+        font-size: 500%;
+        margin-left: -200px;
 
-}
-
-.poster{
-    width: 60px;
+      }
     
-}
+
+  }
+  
