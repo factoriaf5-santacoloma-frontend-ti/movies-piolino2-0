@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     overview.textContent = movieData.overview;
 
     votos.classList.add('totalVotos');
-    votos.textContent = `Votos: ${movieData.vote_average}`;
+    votos.textContent = `Votes: ${movieData.vote_average}`;
 console.log(movieData.vote_average);
 
     originalLanguage.classList.add('lenguajeMovie');
-    originalLanguage.textContent = `languaje: ${movieData.original_language}`; // Idioma original
+    originalLanguage.textContent = `Original language: ${movieData.original_language}`; // Idioma original
     
     releaseDate.classList.add('date');
-    releaseDate.textContent = `Date: ${movieData.release_date}`; // Fecha de lanzamiento
+    releaseDate.textContent = `Release date: ${movieData.release_date}`; // Fecha de lanzamiento
 
     div.classList.add('text-content');
 

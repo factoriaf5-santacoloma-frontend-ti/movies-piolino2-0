@@ -13,13 +13,13 @@
  
   .details-container {
     
-    font-family: "DM Serif Text", serif;
     display: flex;
     flex-direction: column; /* Dirección por defecto en dispositivos pequeños */
     align-items: center;
   }
   
   .details-container h1 {
+    font-family: "Sour Gummy", sans-serif;
     text-align: center;
     margin-top: 2vh;
     color: white; 
@@ -33,6 +33,7 @@
   }
   
   .parrafo, .lenguajeMovie, .adult, .date, .totalVotos {
+    font-family: "Lato", serif;
     font-size: 2vh;
     margin-top: 4vh;
     margin-left: 3%;
