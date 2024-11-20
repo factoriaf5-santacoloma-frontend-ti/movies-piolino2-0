@@ -48,6 +48,8 @@ ul {
     cursor: pointer;
   }
 
+  
+
   /* Efecto al pasar el cursor sobre el póster */
   .poster:hover {
     transform: scale(2.1); /* Aumenta el tamaño a 110% */
