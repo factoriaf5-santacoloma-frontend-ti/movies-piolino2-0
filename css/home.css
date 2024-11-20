@@ -27,13 +27,13 @@ ul {
   margin-left: 30%;
   transition: transform 0.1s ease; /* Transición suave */
   cursor: pointer;
+  border-radius: 20px;
 }
 
 /* Efecto al pasar el cursor sobre el póster */
 .poster:hover {
-  transform: scale(2.1); /* Aumenta el tamaño a 110% */
+  transform: scale(1.1); /* Aumenta el tamaño a 110% */
 }
-
 
 
 .title,
@@ -72,6 +72,6 @@ ul {
 
   /* Efecto al pasar el cursor sobre el póster */
   .poster:hover {
-    transform: scale(2.1); /* Aumenta el tamaño a 110% */
+    transform: scale(1.1); /* Aumenta el tamaño a 110% */
   }
 }
