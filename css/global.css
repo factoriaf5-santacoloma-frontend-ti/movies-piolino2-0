@@ -1,3 +1,8 @@
+@font-face {
+    font-family: lovelo;
+    src: url(/fuentes/Lovelo-LineBold.woff);
+  }
+
 * {
     margin: 0; /* Elimina márgenes predeterminados */
     padding: 0; /* Elimina padding predeterminado */
@@ -8,22 +13,24 @@ body{
     background-color: rgb(25, 24, 24);
 }
 
-
-
 .imagen-cinelandia{
-    width: 100%;
+font-family: lovelo;
+background: linear-gradient(to right, #C38315, #FF0000);
+width: 100%;
+}
+
+.cinelandia{
+    font-size: 100%;
+
 
 }
+
+
 
 @media (min-width: 800px){
-    .imagen-cinelandia{
-        width: 100%;
-        height: 140px;
-        
-    }
-    
-}
 
+
+}
 
 
 
