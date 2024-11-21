@@ -1,4 +1,3 @@
-# Movies
 
 ## Introducción
 

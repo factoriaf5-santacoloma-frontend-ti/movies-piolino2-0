@@ -1,0 +1,191 @@
+
+
+
+
+#movie-details {
+    background-color: #000000;
+    background-color: #000000; margin:
+    50px auto; border-radius:
+    10px; box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);    
+     width: 90%; 
+    margin-left: 5%;
+    margin-top: 2.5%;
+  }
+
+ 
+  .details-container {
+    
+    display: flex;
+    flex-direction: column; /* Dirección por defecto en dispositivos pequeños */
+    align-items: center;
+  }
+
+  .details-container h1 {
+
+  font-family: "Sour Gummy", sans-serif;
+  }
+  
+
+  .title {
+    text-align: center;
+    margin-top: 2vh;
+    color: white; 
+
+  }
+  
+  .details-container img {
+    width: 80%;
+    height: auto;
+    margin-top: 3vh;
+  }
+  
+  .parrafo, .lenguajeMovie, .adult, .date, .totalVotos {
+    font-family: "Lato", serif;
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-left: 3%;
+    color: white;
+  }
+  
+  
+.imagen-cinelandia a {
+  text-decoration:none;
+}
+
+  button {
+    font-family: "Sour Gummy", sans-serif;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+
+  /* Media Queries para pantallas medianas y grandes */
+  @media(min-width: 1040px) {
+
+    .details-container {
+      flex-direction: row; /* Alinea los elementos en fila */
+      justify-content: flex-start; /* Alinea los elementos al inicio */
+      align-items: flex-start; /* Alinea los elementos al inicio */
+    }
+  
+    .details-container img {
+      width: 40%; /* Ajusta el tamaño de la imagen */
+      height: auto;
+      margin: 40px; /* Elimina el margen */
+      margin-top: 20vh;
+    }
+  
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%; /* Ajusta el ancho del contenedor de texto */
+      height: auto;
+      padding-left: 2%; /* Añade padding izquierdo para separación */
+    }
+  
+
+  
+    .title , .parrafo, .lenguajeMovie, .adult, .date {
+      text-align: left;
+      font-size: 200%; /* Ajusta el tamaño de la fuente */
+      margin-top: 6vh; /* Reduce el margen superior */
+      
+    }
+
+
+  
+    button {
+        margin-left: 38%;
+        width: 30vh;
+        font-size: 5vh;
+ 
+    }
+    .details-container h1 {
+      font-size: 500%;
+      margin-left: 15px;
+
+    }
+    .totalVotos{
+      font-size: 34px;
+    }
+
+
+  }
+
+  @media(min-width: 600px) and (max-width: 1039px){
+    .title{
+      font-size: 2em;
+
+    }
+
+    .parrafo{
+     font-size: 25px;
+     text-align: center;
+     margin-right: 2%;
+
+    }
+
+    .parrafo, .lenguajeMovie, .date {
+      font-size: 20PX; /* Ajusta el tamaño de la fuente */
+      
+    }
+
+    .totalVotos{
+      font-size: 2.5vh;
+    }
+
+    
+
+  }
+
+
+  /* Estilo básico del botón */
+.icon-button {
+  position: relative; /* Permite posicionar el icono absolutamente respecto al botón */
+  align-items: center; /* Centra verticalmente el contenido del botón */
+  justify-content: center; /* Centra horizontalmente el contenido del botón */
+  background-color: #f7f7f7; /* Color de fondo del botón */
+  color: rgb(0, 0, 0); /* Color del texto del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+  
+}
+
+/* Estilo del texto dentro del botón */
+.icon-button .button-text {
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad del texto */
+  font-size: 4vh;
+}
+
+/* Estilo del icono dentro del botón */
+.icon-button .button-icon {
+  position: absolute; /* Posiciona el icono absolutamente respecto al botón */
+  font-size: 24px; /* Tamaño del icono */
+  opacity: 0; /* El icono es inicialmente invisible */
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad del icono */
+  top: 50%; /* Posiciona el icono en el centro vertical */
+  left: 50%; /* Posiciona el icono en el centro horizontal */
+  transform: translate(-50%, -50%); /* Ajusta la posición del icono al centro exacto */
+}
+
+/* Estilo del botón al pasar el cursor */
+.icon-button:hover {
+  background-color: #000000; /* Cambia el color de fondo al pasar el cursor */
+}
+
+/* Oculta el texto del botón al pasar el cursor */
+.icon-button:hover .button-text {
+  opacity: 0; /* Oculta el texto */
+}
+
+/* Muestra el icono del botón al pasar el cursor */
+.icon-button:hover .button-icon {
+  opacity: 1; /* Muestra el icono */
+}
+

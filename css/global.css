@@ -1,0 +1,81 @@
+@font-face {
+    font-family: lovelo;
+    src: url(/fuentes/Lovelo-LineBold.woff);
+  }
+
+
+* {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+    box-sizing: border-box; /* Incluye bordes y padding en el cálculo del ancho y alto de los elementos */
+}
+
+
+body{
+    background-color: #000000;
+}
+
+
+.imagen-cinelandia{
+font-family: lovelo;
+background: linear-gradient(to right, #C38315, #FF0000);
+width: 100%;
+}
+
+
+.imagen-cinelandia p{
+font-size: 350%;
+color: white;
+text-align: center;
+align-items: center; /* Centra verticalmente */
+padding: 10px;
+height: 77px;
+        
+}
+
+
+@media(max-width: 350px){
+   .imagen-cinelandia{
+    font-size: 70%;
+   }
+
+}
+
+
+@media(min-width: 700px){
+    .imagen-cinelandia{
+        font-size: 200%;
+        justify-content: center; /* Centra horizontalmente */
+         align-items: center; /* Centra verticalmente */
+         height: 4.2em;
+        
+        
+    }
+
+}
+
+
+@media(max-width: 350px){
+    .imagen-cinelandia{
+      height: 4.5em;
+
+    }
+
+}
+
+
+footer{
+    width: 100%;
+    background: linear-gradient(to right, #C38315, #FF0000); 
+    text-align: center;
+    margin-top: 4vh;
+
+}
+
+
+footer a img {
+    width: 6vh;
+    
+    
+}
+
