@@ -54,3 +54,7 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor sigue estos 
 ## Integrantes del equipo:
 🐀 Juan Diego
 🐇 Paola Borges
+
+
+## Presentación en CANVA
+https://www.canva.com/design/DAGXGU42h1E/lTH-iOcU5MIW3Nff_tcs8Q/view?utm_content=DAGXGU42h1E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h31b035839f
