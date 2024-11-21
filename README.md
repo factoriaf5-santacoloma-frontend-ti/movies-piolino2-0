@@ -33,7 +33,7 @@ Este proyecto consiste en una aplicación web que presenta una galería de pelí
 > git clone https://github.com/factoriaf5-santacoloma-frontend-ti/movies-piolino2-0.git
 
 3.Navega al directorio del proyecto:
->cd nombre-del-directorio
+>cd dev
 
 4.Instala las dependencias:
 >npm install
