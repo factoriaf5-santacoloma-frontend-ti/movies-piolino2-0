@@ -15,18 +15,20 @@
   height: 100vh;
 } */
 
+
+
 .slider {
 
   width: 100%;
  /* max-wgiidth: 800px; Ajusta el ancho máximo del slider */
-  height: 500px;
+  height: 50em;
   position: relative;
   overflow: hidden;
 }
 
 .slider img {
-  width: 100%;
-  height: 100%;
+  width:100%;
+  height: 30%;
   position: absolute;
   top: 0;
   left: 0;
@@ -37,6 +39,8 @@
 .slider img:first-child {
   opacity: 1; /* Muestra la primera imagen */
 }
+
+
 
 ul {
   list-style: none; /* Quitamos los puntos de la lista */
@@ -84,25 +88,65 @@ ul {
 
 }
 
-@media (min-width: 660px) {
+
+
+
+@media (min-width: 600px) {
   .poster {
-    width: 100%;
-    margin-left: -2%;
+    width: 60%;
+    margin-left: 20%;
     transition: transform 0.1s ease; /* Transición suave */
     cursor: pointer;
   }
-  .banner-gladiador{
+  .slider img {
+    height: 60%;
+  }
+  .contenedor {
+    margin-top: -15em;
+  }
+
+  /*.banner-gladiador{
    display: block;
-  }
+  }*/
 
-  .banner-gladiador2{
+  /* .banner-gladiador2{
     display: none;
-  }
-
-  
+  }*/
 
   /* Efecto al pasar el cursor sobre el póster */
   .poster:hover {
     transform: scale(1.1); /* Aumenta el tamaño a 110% */
   }
+}
+
+
+@media(min-width: 800px){
+  .slider img {
+    height: 50vh;
+  }
+
+}
+
+@media(min-width: 1300px){
+  .slider img {
+    height: 100%;
+  }
+
+  .poster{
+    width: 100%;
+    margin-left: 0%;
+  }
+  
+  .contenedor{
+    margin-top: 10%;
+
+  }
+}
+
+@media (max-width: 599px ){
+  .contenedor{
+    margin-top: -35em;
+  }
+
+
 }
