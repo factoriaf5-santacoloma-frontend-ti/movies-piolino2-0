@@ -25,6 +25,7 @@ Este proyecto consiste en una aplicación web que presenta una galería de pelí
 * 🎥 API de TMDB
 * 🎥 Vite (para la configuración del proyecto)
 * 🎥 Fetch API (para realizar llamadas a la API)
+* 🎥 Figma 
 
 ## Instalación🎦 
 1.Asegúrate de tener Node.js y npm instalados en tu sistema.
