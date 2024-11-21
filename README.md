@@ -30,7 +30,7 @@ Este proyecto consiste en una aplicación web que presenta una galería de pelí
 1.Asegúrate de tener Node.js y npm instalados en tu sistema.
 2.Clona el repositorio:
 
-> git clone <URL_DEL_REPOSITORIO>
+> git clone https://github.com/factoriaf5-santacoloma-frontend-ti/movies-piolino2-0.git
 
 3.Navega al directorio del proyecto:
 >cd nombre-del-directorio
